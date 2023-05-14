@@ -1,4 +1,4 @@
-import bonjour
+from bonjour import dire_bonjour, dire_au_revoir
 import vitesse
 import trajet
 
@@ -7,7 +7,7 @@ distance = float(input("quel distance veut-tu parcourir?"))
 vitesse_en_ms = float(input("A quelle vitesse? [m/s] "))
 
 # dire bonjour à l'utilisateur
-bonjour.dire_bonjour(nom)
+dire_bonjour(nom)
 
 # convertir vitesse en km/h
 vitesse_en_kmh = vitesse.convertir_ms_en_kmh(vitesse_en_ms)
@@ -19,4 +19,4 @@ temps_de_trajet = trajet.temps_de_trajet(distance_en_km=distance, vitesse_en_km_
 print(f"votre temps de trajet est de {temps_de_trajet} heures")
 
 # dire au revoir
-bonjour.dire_au_revoir(nom)
+dire_au_revoir(nom)
