@@ -13,7 +13,7 @@ dire_bonjour(nom)
 vitesse_en_kmh = convertir_ms_en_kmh(vitesse_en_ms)
 
 # calculer le temps de trajet
-temps_de_trajet = trajet.trajet.temps_de_trajet(distance_en_km=distance, vitesse_en_km_h=vitesse_en_kmh)
+temps_de_trajet = trajet.temps_de_trajet(distance_en_km=distance, vitesse_en_km_h=vitesse_en_kmh)
 
 # afficher le temps de tranjet
 print(f"votre temps de trajet est de {temps_de_trajet} heures")
