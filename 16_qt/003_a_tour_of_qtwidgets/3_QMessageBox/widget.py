@@ -56,15 +56,61 @@ class Widget(QWidget):
   
   def button_critical_clicked(self):
     print("Critical clicked")
+    ret = QMessageBox.critical(
+      self, 
+      "Critical", "Are you sure?", 
+      QMessageBox.Ok | QMessageBox.Cancel
+    )
+    if ret == QMessageBox.Ok:
+      print("Ok clicked")
+    elif ret == QMessageBox.Cancel:
+      print("Cancel clicked")
   
   def button_info_clicked(self):
     print("Info clicked")
+    ret = QMessageBox.information(
+      self, 
+      "Info", "Woah!!", 
+      QMessageBox.Ok
+    )
+    
+    if ret == QMessageBox.Ok:
+      print("Ok clicked")
+    elif ret == QMessageBox.Cancel:
+      print("Cancel clicked")
   
   def button_warning_clicked(self):
     print("Warning clicked")
+    ret = QMessageBox.warning(
+      self, 
+      "Warning", "Are you sure?",
+      QMessageBox.Ok | QMessageBox.Cancel
+    )
+    if ret == QMessageBox.Ok:
+      print("Ok clicked")
+    elif ret == QMessageBox.Cancel:
+      print("Cancel clicked")
   
   def button_question_clicked(self):
     print("Question clicked")
+    ret = QMessageBox.question(
+      self, 
+      "Question", "Are you sure? (Yes/No) ",
+      QMessageBox.Ok | QMessageBox.Cancel
+    )
+    if ret == QMessageBox.Ok:
+      print("Ok clicked")
+    elif ret == QMessageBox.Cancel:
+      print("Cancel clicked")   
+    
   
   def button_about_clicked(self):
     print("About clicked")
+    ret = QMessageBox.about(
+      self, 
+      "About", 
+      "This is the About message"
+    )
+    if ret == QMessageBox.Ok:
+      print("Ok clicked")
+   
