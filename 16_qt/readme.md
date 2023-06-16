@@ -7,3 +7,7 @@ https://www.youtube.com/watch?v=Z1N9JzNax2k
 #github    dututo
 https://github.com/rutura/Qt-For-Python-PySide6-GUI-For-Beginners-The-Fundamentals-
 
+
+# site
+https://my.qt.io/
+

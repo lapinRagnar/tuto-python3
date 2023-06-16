@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_LoginForm</class>
+ <widget class="QWidget" name="w_LoginForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Mon super application</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../icons/Icons.qrc">
+    <normaloff>:/main/favicon.ico</normaloff>:/main/favicon.ico</iconset>
+  </property>
+ </widget>
+ <resources>
+  <include location="../../icons/Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
