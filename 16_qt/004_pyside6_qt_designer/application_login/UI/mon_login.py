@@ -77,6 +77,7 @@ class Ui_w_LoginForm(object):
 
         self.le_Password = QLineEdit(self.groupBox)
         self.le_Password.setObjectName(u"le_Password")
+        self.le_Password.setEchoMode(QLineEdit.Password)
 
         self.formLayout.setWidget(1, QFormLayout.FieldRole, self.le_Password)
 
@@ -87,6 +88,9 @@ class Ui_w_LoginForm(object):
 
         self.gridLayout.addItem(self.verticalSpacer, 1, 0, 1, 1)
 
+        QWidget.setTabOrder(self.le_UserID, self.le_Password)
+        QWidget.setTabOrder(self.le_Password, self.pb_ok)
+        QWidget.setTabOrder(self.pb_ok, self.pb_cancel)
 
         self.retranslateUi(w_LoginForm)
 
