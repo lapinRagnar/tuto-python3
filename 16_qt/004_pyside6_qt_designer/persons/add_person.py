@@ -7,7 +7,7 @@ from PySide6 import QtGui as qtg
 import PySide6.QtCore
 import PySide6.QtWidgets
 
-from ui.add_person_window import Ui_d_person
+from persons.ui.add_person_window import Ui_d_person
 
 class AddPerson(qtw.QDialog, Ui_d_person):
   def __init__(self):
